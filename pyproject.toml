@@ -19,7 +19,7 @@ dependencies = [
 test = ["pytest>=7.4"]
 
 [project.urls]
-Homepage = "https://github.com/thjimmylee/ggplot2"
+Homepage = "https://github.com/thjimmylee/ggplot2/tree/dev"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
