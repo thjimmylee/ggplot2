@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ggpy"
+version = "0.1.0"
+description = "A minimal ggplot-like plotting interface for pandas and matplotlib."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ggpy contributors" }]
+dependencies = [
+  "pandas>=1.5",
+  "numpy>=1.23",
+  "matplotlib>=3.7"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4"]
+
+[project.urls]
+Homepage = "https://github.com/thjimmylee/ggplot2"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
